@@ -1,0 +1,14 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "RafaelBochi", email = "rafaelbochibarros@gmail.com"},
+]
+dependencies = [
+    "django>=5.0.4",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
