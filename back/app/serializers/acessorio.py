@@ -1,8 +1,8 @@
-from rest_framework.viewsets import ModelViewSet
+from rest_framework.serializers import ModelSerializer
 
 from app.models import Acessorio
-from app.serializers import AcessorioSerializer
 
-class AcessorioViewSet(ModelViewSet):
-    queryset = Acessorio.objects.all()
-    serializer_class = AcessorioSerializer
+class AcessorioSerializer(ModelSerializer):
+    class Meta:
+        model = Acessorio
+        fields = "__all__"
